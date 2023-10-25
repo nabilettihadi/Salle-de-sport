@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShapeShifters</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="image/logo1.png" width="70" height="70" alt="logo" />
+        <ul class="nav">
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="programmes.html">Programmes Sportifs</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a class="active3" href="inscription.html">Inscription</a></li>
+        </ul>
+        <div class="burger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="register">
+      <div class="signup">
+        <div class="regtitle">
+          <h1>Inscr<span>iption </span></h1>
+        </div>
+        <form class="reg" id="regform">
+          <input id="nom" type="text" placeholder="Nom" />
+          <span id="nomError" class="error-message"></span>
+          <input id="prenom" type="text" placeholder="Prenom" />
+          <span id="prenomError" class="error-message"></span>
+          <input id="cin" type="text" placeholder="CIN" />
+          <span id="cinError" class="error-message"></span>
+          <input id="email" type="text" placeholder="votrenom@gmail.com" />
+          <span id="emailError" class="error-message"></span>
+          <input id="phone" type="text" placeholder="ex. +212 6 12 34 56 78" />
+          <span id="phoneError" class="error-message"></span>
+          <select id="plan">
+            <option selected disabled>Choisir un plan</option>
+            <option>Mensuel</option>
+            <option>Trimestriel</option>
+            <option>Annuel</option>
+          </select>
+          <span id="planError" class="error-message"></span>
+          <button class="regbtn" type="submit">Envoyer</button>
+          <br />
+        </form>
+      </div>
+    </section>
+
+    <footer class="f">
+      <div class="foot">
+        <div class="infoicn">
+          <img src="image/accueil.png" alt="" />
+          <img src="image/appeler.png" alt="" />
+          <img src="image/time-and-date.png" alt="" />
+        </div>
+        <div class="info">
+          <span>
+            <br />
+            Résidence Naourass, Boulevard Ibnabdellah, ville nouvelle, Safi,
+            Maroc
+          </span>
+          <span>
+            +1 234 567 89
+            <br />
+            +9 876 543 21
+          </span>
+          <span>
+            <ul>
+              <li>Jours: Lundi à Dimanche</li>
+              <li>Heure: 7:00 - 23:00</li>
+            </ul>
+            <br />
+          </span>
+        </div>
+      </div>
+      <div class="contact">
+        <span class="titre">Contact Us</span>
+        <input id="fullname" type="text" placeholder="Nom Complet" />
+        <span id="fullnameError" class="error-msg"></span>
+        <input id="mail" type="email" placeholder="E-mail" />
+        <span id="mailError" class="error-msg"></span>
+        <textarea
+          id="message"
+          cols="20"
+          rows="3"
+          placeholder="Message"
+        ></textarea>
+        <span id="messageError" class="error-msg"></span>
+        <a href="#" class="sub" id="submit-button">Submit</a>
+        <br />
+      </div>
+    </footer>
+    <div class="copy">
+      <span>All rights are reserved © ShapeShifters 2023</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
