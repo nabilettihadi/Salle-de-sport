@@ -84,7 +84,7 @@ header {
 		top: 70px;
 		flex-direction: column;
 		background-color: black;
-		gap: 80px;
+		gap: 50px;
 		width: 40%;
 		height: 45%;
 	}

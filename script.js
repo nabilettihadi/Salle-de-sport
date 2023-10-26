@@ -169,4 +169,3 @@ document.getElementById('regform').addEventListener('submit', function (e) {
     if (Object.keys(errors).length > 0) {
         e.preventDefault();
     }
-});
