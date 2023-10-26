@@ -32,23 +32,23 @@ document.getElementById('submit-button').addEventListener('click', function (e) 
     }
 
     if (!fullname.match(nameRegex)) {
-        displayError("fullname", "at least 3 characters long and contain only letters.");
+        displayError("fullname", "Au moins 3 caractères et contenant uniquement des lettres.");
     } else {
         clearError("fullname");
     }
     if (!email.match(emailRegex)) {
-        displayError("mail", "Please enter a valid email address.");
+        displayError("mail", "Veuillez entrer une adresse e-mail valide.");
     } else {
         clearError("mail");
     }
     if (message.trim() === "") {
-        displayError("message", "Message cannot be empty.");
+        displayError("message", "Le message ne peut pas être vide");
     } else {
         clearError("message");
     }
 
     if (Object.keys(errors).length === 0) {
-        alert("Contact form submitted successfully!");
+        alert("Formulaire de contact soumis avec succès !");
     }
 });
 
@@ -131,22 +131,22 @@ document.getElementById('regform').addEventListener('submit', function (e) {
     }
 
     if (!nom.match(nomRegex)) {
-        displayError("nom", "at least 3 characters long and contain only letters.");
+        displayError("nom", "Au moins 3 caractères et contenant uniquement des lettres.");
     } else {
         clearError("nom");
     }
     if (!prenom.match(prenomRegex)) {
-        displayError("prenom", "at least 3 characters long and contain only letters.");
+        displayError("prenom", "Au moins 3 caractères et contenant uniquement des lettres.");
     } else {
         clearError("prenom");
     }
     if (!cin.match(cinRegex)) {
-        displayError("cin", "CIN should start with a letter and be followed by 6 digits.");
+        displayError("cin", "Le CIN doit commencer par une lettre et être suivi de 6 chiffres.");
     } else {
         clearError("cin");
     }
     if (!email.match(emailRegex)) {
-        displayError("email", "Please enter a valid email address.");
+        displayError("email", "Veuillez entrer une adresse e-mail valide.");
     } else {
         clearError("email");
     }
@@ -156,10 +156,15 @@ document.getElementById('regform').addEventListener('submit', function (e) {
         clearError("phone");
     }
     if (plan === "Choose a plan") {
-        displayError("plan", "Please choose a plan.");
+        displayError("plan", "Veuillez choisir un plan.");
     } else {
         clearError("plan");
     }
+
+    if (Object.keys(errors).length > 0) {
+        e.preventDefault();
+    }
+});
 
     if (Object.keys(errors).length > 0) {
         e.preventDefault();
